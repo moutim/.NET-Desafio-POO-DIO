@@ -27,21 +27,23 @@ namespace DesafioPOO.Models
             Console.WriteLine($"Recebendo ligação do número {numero}...");
         }
 
-        public string ObterModelo(string modeloSmartphone)
+        public string ObterModelo()
         {
             return Modelo;
         }
 
-        public string ObterIMEI(string modeloSmartphone)
+        public string ObterIMEI()
         {
             return IMEI;
         }
 
-        public int ObterMemoria(string modeloSmartphone)
+        public int ObterMemoria()
         {
             return Memoria;
         }
 
-        public abstract void InstalarAplicativo(string nomeApp);
+        public abstract void ApresentarAparelho(string modelo, string numero, string imei, int memoria);
+
+        public abstract void InstalarAplicativo(string nomeApp, string modelo);
     }
 }
