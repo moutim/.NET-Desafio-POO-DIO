@@ -27,19 +27,19 @@ namespace DesafioPOO.Models
             Console.WriteLine($"Recebendo ligação do número {numero}...");
         }
 
-        public void ObterModelo(string modeloSmartphone)
+        public string ObterModelo(string modeloSmartphone)
         {
-            Console.WriteLine($"O modelo do seu {modeloSmartphone} é o {Modelo}.");
+            return Modelo;
         }
 
-        public void ObterIMEI(string modeloSmartphone)
+        public string ObterIMEI(string modeloSmartphone)
         {
-            Console.WriteLine($"O IMEI do seu {modeloSmartphone} é {IMEI}.");
+            return IMEI;
         }
 
-        public void ObterMemoria(string modeloSmartphone)
+        public int ObterMemoria(string modeloSmartphone)
         {
-            Console.WriteLine($"A memória do seu {modeloSmartphone} é de {Memoria}gb.");
+            return Memoria;
         }
 
         public abstract void InstalarAplicativo(string nomeApp);
