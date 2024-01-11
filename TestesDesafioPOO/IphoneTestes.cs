@@ -17,9 +17,9 @@ namespace TestesDesafioPOO
 
         public IphoneTestes()
         {
-            _iPhone = new Iphone("12345678", "Lumia", "87654321", 128);
+            _iPhone = new Iphone("12345678", "Xr", "87654321", 128);
             Numero = "12345678";
-            Modelo = "Lumia";
+            Modelo = "Xr";
             IMEI = "87654321";
             Memoria = 128;
         }
