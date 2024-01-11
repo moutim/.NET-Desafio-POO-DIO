@@ -7,15 +7,15 @@ namespace DesafioPOO.Models
         {
         }
 
-        public override void ApresentarAparelho()
+        public override string ApresentarAparelho()
         {
-            Console.WriteLine($"iPhone {ObterModelo()} com {ObterMemoria()}gb, número {Numero} e IMEI {ObterIMEI()}.");
+            return $"iPhone {ObterModelo()} com {ObterMemoria()}gb, número {Numero} e IMEI {ObterIMEI()}.";
         }
 
         // TODO: Sobrescrever o método "InstalarAplicativo"
-        public override void InstalarAplicativo(string nomeApp)
+        public override string InstalarAplicativo(string nomeApp)
         {
-            Console.WriteLine($"Instalando o aplicativo '{nomeApp}' no iPhone {ObterModelo()}.");
+            return $"Instalando o aplicativo '{nomeApp}' no iPhone {ObterModelo()}.";
         }
     }
 }
