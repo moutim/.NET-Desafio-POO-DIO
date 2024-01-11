@@ -42,8 +42,8 @@ namespace DesafioPOO.Models
             return Memoria;
         }
 
-        public abstract void ApresentarAparelho(string modelo, string numero, string imei, int memoria);
+        public abstract void ApresentarAparelho();
 
-        public abstract void InstalarAplicativo(string nomeApp, string modelo);
+        public abstract void InstalarAplicativo(string nomeApp);
     }
 }

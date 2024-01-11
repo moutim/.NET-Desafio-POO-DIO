@@ -8,14 +8,14 @@ namespace DesafioPOO.Models
         {
         }
         
-        public override void ApresentarAparelho(string modelo, string numero, string imei, int memoria)
+        public override void ApresentarAparelho()
         {
-            Console.WriteLine($"Nokia {modelo} com {memoria}gb, número {numero} e IMEI {imei}.");
+            Console.WriteLine($"Nokia {ObterModelo()} com {ObterMemoria()}gb, número {Numero} e IMEI {ObterIMEI()}.");
         }
 
-        public override void InstalarAplicativo(string nomeApp, string modelo)
+        public override void InstalarAplicativo(string nomeApp)
         {
-            Console.WriteLine($"Instalando o aplicativo '{nomeApp}' no Nokia {modelo}.");
+            Console.WriteLine($"Instalando o aplicativo '{nomeApp}' no Nokia {ObterModelo()}.");
         }
     }
 }
