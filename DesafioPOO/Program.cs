@@ -12,5 +12,5 @@ Console.WriteLine("---------------------------");
 Console.WriteLine("Smartphone Nokia:");
 Nokia nokia = new(numero: "11944597825", modelo: "Lumia", imei: "87654321", memoria: 64);
 Console.WriteLine(nokia.ApresentarAparelho());
-Console.WriteLine(nokia.Ligar("11998181280"));
+Console.WriteLine(nokia.ReceberLigacao("11998181280"));
 Console.WriteLine(nokia.InstalarAplicativo("WhatsApp"));
