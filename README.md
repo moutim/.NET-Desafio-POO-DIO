@@ -1,22 +1,46 @@
-# DIO - Trilha .NET - Programação orientada a objetos
-www.dio.me
+# DesafioPOO - Projeto em C# 📱
 
-## Desafio de projeto
-Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de orientação a objetos, da trilha .NET da DIO.
+Este é um projeto desenvolvido em C# utilizando Programação Orientada a Objetos (POO), baseando-se nos pilares da POO: **Encapsulamento**, **Abstração**, **Herança** e **Polimorfismo**. O objetivo principal é simular as funcionalidades de um Smartphone, com métodos que abrangem desde a apresentação do aparelho até a instalação de aplicativos e realização de chamadas telefônicas.
 
-## Contexto
-Você é responsável por modelar um sistema que trabalha com celulares. Para isso, foi solicitado que você faça uma abstração de um celular e disponibilize maneiras de diferentes marcas e modelos terem seu próprio comportamento, possibilitando um maior reuso de código e usando a orientação a objetos.
+## Funcionalidades Principais 🚀
 
-## Proposta
-Você precisa criar um sistema em .NET, do tipo console, mapeando uma classe abstrata e classes específicas para dois tipos de celulares: Nokia e iPhone. 
-Você deve criar as suas classes de acordo com o diagrama abaixo:
+### Apresentação do Smartphone
+O método `ApresentarAparelho` exibe as principais informações do Smartphone, como modelo, capacidade de memória, número e IMEI.
 
-![Diagrama classes](Imagens/diagrama.png)
+### Instalação de Aplicativos
+O método `InstalarAplicativo` permite a instalação de diferentes aplicativos no Smartphone, com a exibição de uma mensagem informativa.
 
-## Regras e validações
-1. A classe **Smartphone** deve ser abstrata, não permitindo instanciar e servindo apenas como modelo.
-2. A classe **Nokia** e **Iphone** devem ser classes filhas de Smartphone.
-3. O método **InstalarAplicativo** deve ser sobrescrito na classe Nokia e iPhone, pois ambos possuem diferentes maneiras de instalar um aplicativo.
+### Realização de Ligações
+Os métodos `Ligar` e `ReceberLigacao` simulam as ações de efetuar e receber chamadas telefônicas, respectivamente.
 
-## Solução
-O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
+### Informações do Aparelho
+Os métodos `ObterIMEI`, `ObterModelo` e `ObterMemoria` retornam, respectivamente, o número IMEI, modelo e capacidade de memória do Smartphone.
+
+## Pilares da POO Implementados 🏛️
+
+### Encapsulamento
+As propriedades e métodos são encapsulados nas classes, garantindo o acesso controlado e a proteção dos dados.
+
+### Abstração
+A classe `Smartphone` e seus métodos refletem uma abstração do conceito de um Smartphone, concentrando-se nos aspectos essenciais do dispositivo.
+
+### Herança
+O projeto utiliza conceitos de herança para criar as classe `Iphone` e `Nokia`, que herda da classe abstrata `Smartphone`.
+
+### Polimorfismo
+Os métodos de ligação (`Ligar` e `ReceberLigacao`) demonstram o polimorfismo, adaptando-se aos diferentes números de telefone.
+
+## Testes Unitários com xUnit 🧪
+
+Todos os métodos foram submetidos a testes unitários utilizando a biblioteca xUnit. Isso garante que as funcionalidades do projeto estão corretamente implementadas e contribui para a manutenção da qualidade do código.
+
+## Estrutura do Projeto 🏗️
+
+O projeto é organizado em classes e métodos, seguindo os princípios da Programação Orientada a Objetos. As classes de testes, `NokiaTestes` e `IphoneTestes`, contêm casos de teste para garantir o funcionamento adequado de cada método.
+
+## Como Utilizar 🛠️
+
+1. Clone o repositório para sua máquina local.
+2. Abra o projeto em seu ambiente de desenvolvimento C#.
+3. Execute os testes unitários para verificar a integridade do código.
+4. Integre as classes e métodos do projeto em sua aplicação, se necessário.
